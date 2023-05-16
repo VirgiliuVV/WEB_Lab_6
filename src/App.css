@@ -1,0 +1,106 @@
+@font-face {
+  font-family: Righteous;
+  src: url("/public/Fonts/Righteous-Regular.ttf");
+}
+
+*{
+  font-family: Righteous;
+}
+
+:root{
+  --lighter_main: #83cec9;
+  --light_main: #21647e;
+  --dark_main: white;
+  --darker_main: #771515;
+}
+
+.App {
+  display: flex;
+  background-image: url("/public/Img/background.jpg");
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  width: 450px;
+  height: 500px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px 10px var(--darker_main);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input{
+  box-sizing: border-box;
+  font-size: 25px;
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 10px;
+  box-shadow: white 0 0 15px;
+  border: white 2px solid;
+  background-color: #00000000;
+  color: var(--darker_main);
+  height: 45px;
+  width: 310px;
+}
+
+.input_cont{
+  width: 310px;
+  height: 45px;
+  margin: 10px 0;
+}
+
+.button{
+  height: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  padding: 20px 0px;
+  background-color: white;
+  height: 45px;
+  width: 310px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  margin-top: 20px;
+}
+
+.button:hover{
+  scale: 1.02 1.02;
+  box-shadow: 0 0 10px var(--darker_main);
+}
+
+.input:focus{
+  background-color: rgba(128, 8, 161, 0.31);
+}
+
+.message{
+  font-size: 30px;
+  color: var(--darker_main);
+  margin: 0;
+  transition: all 0.5s ease-in-out;
+  height: 30px;
+}
+
+.title{
+  font-size: 34px;
+  color: var(--darker_main);
+  padding: 10px 0;
+}
